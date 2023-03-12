@@ -1,0 +1,10 @@
+<h1>Editing Article</h1>
+
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Show', article_path(@article) %> |
+<%= link_to 'Back', root_path %>
